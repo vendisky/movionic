@@ -1,0 +1,37 @@
+<ion-view view-title="Movies">
+
+  <ion-nav-buttons side="right">
+    <button class="button button-icon ion-more" ng-click="popover.show($event)">
+    </button>
+  </ion-nav-buttons>
+
+  <ion-header-bar class="bar-light bar-subheader">
+    <input type="search"
+      placeholder="Filter movies..."
+      ng-model="search"
+      ng-focus="searchFocused = true"
+      ng-blur="searchFocused = false"
+      ng-change="scrollTop()" style="width: 100%">
+    <button ng-if="search.length"
+      class="button button-icon ion-android-close input-button"
+      ng-click="clearSearch()">
+    </button>
+  </ion-header-bar>
+  
+  <ion-content> <!-- class="padding" could be removed -->
+    <div class="list">
+
+      <a ng-repeat="movie in getMovies() | orderBy: order :reverse"
+          href="#/tab/movies/{{movie.id}}"
+          class="item item-thumbnail-left-movies">
+        <img ng-src="img/{{movie.id}}/post.jpg">
+        <h2>{{ movie.name }}</h2>
+        <h3 style="color:#ffc900"># {{ movie.tagline }}</h3>
+        <br/>
+        <p>{{ movie.star1 }}, {{ movie.star2 }}, {{ movie.star3 }}</p>
+        <p><span style="background: #33cd5f; color: white">&nbsp;{{ movie.rating }}&nbsp;</span></p>
+      </a>
+
+    </div>
+  </ion-content>
+</ion-view>

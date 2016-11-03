@@ -1,0 +1,66 @@
+<ion-view view-title="{{movie.name}}">
+  <ion-content class="padding">
+
+    <div class="list card">
+      <div class="item item-divider">General</div>
+      <div class="item item-thumbnail-left-movie-detail">
+        <img ng-src="img/{{movie.id}}/post.jpg">
+        <h2>{{ movie.name }}</h2>
+        <h3 style="color:#ffc900"># {{ movie.tagline }}</h3>
+        <br/>
+        <p>{{ movie.mpaa }}</p>
+        <p>{{ movie.runningTime }} min</p>
+        <p>{{ movie.releaseDate }} (USA)</p>
+        <br/>
+        <p><span style="background: #33cd5f; color: white">&nbsp;{{ movie.rating }}&nbsp;</span></p>
+      </div>
+    </div>
+
+    <div class="list card">
+      <div class="item item-divider">Director</div>
+      <div class="item item-avatar-movie-detail" href="#">
+        <img src="img/{{movie.id}}/director.jpg">
+        <h2>{{movie.director}}</h2>
+      </div>
+    </div>
+
+    <div class="list card">
+      <div class="item item-divider">Stars</div>
+      <div class="item item-avatar-movie-detail" href="#">
+        <img src="img/{{movie.id}}/star1.jpg">
+        <h2>{{movie.star1}}</h2>
+      </div>
+      <div class="item item-avatar-movie-detail" href="#">
+        <img src="img/{{movie.id}}/star2.jpg">
+        <h2>{{movie.star2}}</h2>
+      </div>
+      <div class="item item-avatar-movie-detail" href="#">
+        <img src="img/{{movie.id}}/star3.jpg">
+        <h2>{{movie.star3}}</h2>
+      </div>
+    </div>
+
+    <div class="list card">
+      <div class="item item-divider">Storyline</div>
+        <div class="item item-text-wrap">
+          <p>{{ movie.storyline }}</p>
+        </div>
+    </div>
+
+    <div class="list card">
+      <div class="item item-divider">Links</div>
+      <div class="list">
+        <a class="item" href="www.zhihu.com/people/vendisky">
+          <h2>mtime</h2>
+        </a>
+        <a class="item" href="www.zhihu.com/people/vendisky">
+          <h2>douban</h2>
+        </a>
+      </div>
+    </div>
+
+
+
+
+  </ion-content>
+</ion-view>

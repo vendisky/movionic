@@ -1,0 +1,21 @@
+<ion-popover-view>
+    <ion-content>
+
+      <div class="item item-divider">
+        <h3>Ordered by</h3>
+      </div>
+      <a class="item item-icon-right" style="background: {{getOrderBackground('-name')}}" ng-click="setOrder('-name')">
+        <h2 style="color: {{getOrderColor('-name')}}">name</h2>
+        <i class="icon {{getOrderIcon('-name')}}" style="color: white"></i>
+      </a>
+      <a class="item item-icon-right" style="background: {{getOrderBackground('-rating')}}" ng-click="setOrder('-rating')">
+        <h2 style="color: {{getOrderColor('-rating')}}">rating</h2>
+        <i class="icon {{getOrderIcon('-rating')}}" style="color: white"></i>
+      </a>
+      <a class="item item-icon-right" style="background: {{getOrderBackground('-year')}}" ng-click="setOrder('-year')">
+        <h2 style="color: {{getOrderColor('-year')}}">year</h2>
+        <i class="icon {{getOrderIcon('-year')}}" style="color: white"></i>
+      </a>
+
+    </ion-content>
+  </ion-popover-view>

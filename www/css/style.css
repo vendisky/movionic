@@ -1,0 +1,131 @@
+/* Empty. Add your own CSS if you like */
+.item-thumbnail-left-movies
+{
+    min-height: 140px; 
+    padding-top: 8px;
+    padding-left: 106px;
+}
+.item-thumbnail-left-movies > img:first-child,
+.item-thumbnail-left-movies .item-image,
+.item-thumbnail-left-movies .item-content > img:first-child,
+.item-thumbnail-left-movies .item-content .item-image
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 100%;
+    max-width: 80px;
+    height: 100%; 
+    max-height: 119px;
+}
+.item-thumbnail-left-movies .item,
+.item-thumbnail-left-movies .item-content,
+.item-thumbnail-left-movies,
+.item-thumbnail-left-movies h1,
+.item-thumbnail-left-movies h2,
+.item-thumbnail-left-movies h3,
+.item-thumbnail-left-movies h4,
+.item-thumbnail-left-movies h5,
+.item-thumbnail-left-movies h6,
+.item-thumbnail-left-movies p,
+.item-complex.item-thumbnail-left-movies .item-content,
+.item-body h1,
+.item-body h2,
+.item-body h3,
+.item-body h4,
+.item-body h5,
+.item-body h6,
+.item-body p
+{
+    overflow: visible;
+
+    white-space: normal;
+}
+
+
+
+.item-thumbnail-left-movie-detail
+{
+    min-height: 200px; 
+    padding-top: 8px;
+    padding-left: 146px;
+}
+.item-thumbnail-left-movie-detail > img:first-child,
+.item-thumbnail-left-movie-detail .item-image,
+.item-thumbnail-left-movie-detail .item-content > img:first-child,
+.item-thumbnail-left-movie-detail .item-content .item-image
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 100%;
+    max-width: 120px;
+    height: 100%; 
+    max-height: 178px;
+}
+.item-thumbnail-left-movie-detail .item,
+.item-thumbnail-left-movie-detail .item-content,
+.item-thumbnail-left-movie-detail,
+.item-thumbnail-left-movie-detail h1,
+.item-thumbnail-left-movie-detail h2,
+.item-thumbnail-left-movie-detail h3,
+.item-thumbnail-left-movie-detail h4,
+.item-thumbnail-left-movie-detail h5,
+.item-thumbnail-left-movie-detail h6,
+.item-thumbnail-left-movie-detail p,
+.item-complex.item-thumbnail-left-movie-detail .item-content,
+.item-body h1,
+.item-body h2,
+.item-body h3,
+.item-body h4,
+.item-body h5,
+.item-body h6,
+.item-body p
+{
+    overflow: visible;
+
+    white-space: normal;
+}
+
+
+
+.item-avatar-movie-detail,
+.item-avatar-movie-detail .item-content,
+.item-avatar-movie-detail-left,
+.item-avatar-movie-detail-left .item-content
+{
+    min-height: 72px; 
+    padding-left: 72px;
+}
+.item-avatar-movie-detail > img:first-child,
+.item-avatar-movie-detail .item-image,
+.item-avatar-movie-detail .item-content > img:first-child,
+.item-avatar-movie-detail .item-content .item-image,
+.item-avatar-movie-detail-left > img:first-child,
+.item-avatar-movie-detail-left .item-image,
+.item-avatar-movie-detail-left .item-content > img:first-child,
+.item-avatar-movie-detail-left .item-content .item-image
+{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+
+    max-width: 40px;
+    max-height: 56px;
+    /*width: 100%;
+    height: 100%;
+    */
+
+    border-radius: 50%;
+}
+
+.keyboard-open .tabs
+{
+    display: none;
+}
+.keyboard-open .has-tabs
+{
+    bottom: 0;
+}
